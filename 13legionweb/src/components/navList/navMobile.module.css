@@ -1,0 +1,17 @@
+.navMobile_wrapper {
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  background-color: var(--almostblack);
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .navMobile_wrapper {
+    width: 420px;
+    right: 0;
+    left: auto;
+    box-shadow: -50vw 0px 15px rgba(31, 29, 29, 0.5);
+  }
+}
