@@ -10,8 +10,25 @@
   height: max-content;
 }
 
+.navList_links {
+  display: none;
+}
+
+.overflow {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.356);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 @media screen and (min-width: 740px) {
   .navList_form {
     display: none;
+  }
+
+  .navList_links {
+    display: block;
   }
 }

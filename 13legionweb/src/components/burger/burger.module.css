@@ -1,7 +1,7 @@
 .burger {
   position: relative;
   width: 15px;
-  height: 10px;
+  height: 11px;
   background: transparent;
   cursor: pointer;
   display: block;
@@ -15,7 +15,7 @@
 .burger span {
   display: block;
   position: absolute;
-  height: 1.5px;
+  height: 2px;
   width: 100%;
   background: var(--white);
   border-radius: 9px;

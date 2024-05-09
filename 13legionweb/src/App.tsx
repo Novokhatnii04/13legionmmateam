@@ -1,11 +1,8 @@
 import "./App.css";
+import HomePage from "./pages/homePage/HomePage";
 
 function App() {
-  return (
-    <>
-      <h1>Global sla</h1>
-    </>
-  );
+  return <HomePage />;
 }
 
 export default App;

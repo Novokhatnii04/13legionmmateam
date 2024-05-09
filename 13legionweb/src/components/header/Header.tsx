@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ children }) => {
   return (
     <header className={styles.header}>
-      <div className={styles.header_content} >{children}</div>
+      <div className={styles.header_content}>{children}</div>
     </header>
   );
 };

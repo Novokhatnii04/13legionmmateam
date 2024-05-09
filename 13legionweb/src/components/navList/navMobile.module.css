@@ -4,6 +4,11 @@
   height: 100vh;
   background-color: var(--almostblack);
   position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 69px;
   top: 0;
 }
 
@@ -12,6 +17,5 @@
     width: 420px;
     right: 0;
     left: auto;
-    box-shadow: -50vw 0px 15px rgba(31, 29, 29, 0.5);
   }
 }

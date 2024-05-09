@@ -1,0 +1,54 @@
+.navLinks_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLinks_wrapper li {
+  font-size: 18px;
+  color: var(--white);
+  list-style: none;
+  width: 30px;
+  min-width: max-content;
+  font-family: Gilroy-Light;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  z-index: 2;
+  transition: text-shadow 0.5 ease;
+}
+
+.navLinks_wrapper li::after {
+  content: "";
+  /* border-bottom: 1px solid var(--white); */
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  transition: width 0.2s ease, opacity 0.5s ease;
+  background-image: url("../../assets/images/maze.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.navLinks_wrapper li:hover {
+  text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.514);
+}
+
+.navLinks_wrapper li:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.navLinks_mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.navLinks_mobile li {
+  font-size: 35px;
+}
