@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "./navList.module.css";
-import TitleLogo from "../title/TitleLogo";
+import TitleLogo from "../titlelogo/TitleLogo.tsx";
 import Burger from "../burger/Burger.tsx";
 import NavMobile from "./NavMobile";
 import NavLinks from "./NavLinks.tsx";
@@ -14,7 +14,7 @@ const NavList = () => {
 
   return (
     <div className={styled.navList}>
-      <TitleLogo />
+      <TitleLogo classname="header" />
       <div className={styled.navList_form}>
         <Burger burgerClickHandler={changeMenuStateHandler} />
         {isMenuOpenState && <NavMobile />}

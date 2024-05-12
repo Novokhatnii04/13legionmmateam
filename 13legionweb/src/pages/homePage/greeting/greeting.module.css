@@ -1,0 +1,27 @@
+.greeting_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting_title {
+  font-size: 6vw;
+  color: var(--white);
+  text-transform: uppercase;
+  text-shadow: 0px 11px 12px black;
+}
+
+@media screen and (min-width: 480px) {
+  .greeting_title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width: 740px) {
+    .greeting_title {
+      font-size: 64px;
+    }
+  }
