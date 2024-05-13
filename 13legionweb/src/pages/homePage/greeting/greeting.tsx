@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "./greeting.module.css";
 import TitleLogo from "../../../components/titlelogo/TitleLogo";
 
