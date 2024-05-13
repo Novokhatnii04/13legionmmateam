@@ -54,22 +54,22 @@
   }
 
   .greeting_logo {
-    width: 230px;
-    height: 230px;
+    width: 210px;
+    height: 210px;
   }
 
   .greeting_title {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
 @media screen and (min-width: 740px) {
   .greeting_title {
-    font-size: 135px;
+    font-size: 100px;
   }
 
   .greeting_logo {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
