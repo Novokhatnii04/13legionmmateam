@@ -1,0 +1,45 @@
+.maze_wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  top: 70px;
+}
+
+.maze_image {
+  width: 0;
+  mix-blend-mode: color-burn;
+  max-width: 600px;
+  z-index: 6;
+  animation: mazeshow 3s ease forwards;
+}
+
+.maze_text {
+  color: var(--white);
+  font-size: 8vw;
+  position: absolute;
+  z-index: 10;
+}
+
+@keyframes mazeshow {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .maze_text {
+    color: var(--white);
+    font-size: 60px;
+    position: absolute;
+    z-index: 10;
+  }
+}

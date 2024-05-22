@@ -1,10 +1,11 @@
 .greeting {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   min-height: 600px;
   max-height: 700px;
   top: -2px;
+  box-shadow: inset -1px -20px 20px #1f1d1d;
 }
 
 .greeting_wrapper {
