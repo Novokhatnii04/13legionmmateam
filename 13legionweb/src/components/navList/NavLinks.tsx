@@ -9,9 +9,9 @@ const NavLinks: FC<INavLinks> = ({ modifier = "" }) => {
   return (
     <ul className={`${styled.navLinks_wrapper} ${styled[modifier]}`}>
       <li>Головна</li>
+      <li>Галерея</li>
       <li>Контакти</li>
       <li>Про нас</li>
-      <li>Галерея</li>
     </ul>
   );
 };

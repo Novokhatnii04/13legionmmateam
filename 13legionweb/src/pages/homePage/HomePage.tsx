@@ -3,12 +3,14 @@ import Video from "../../assets/video/main.mp4";
 import styles from "./homePage.module.css";
 import Greeting from "./greeting/greeting";
 import Gallery from "./galleryslider/gallery";
+import CoachCard from "./acquaintance/CoachCard";
+import Acquintance from "./acquaintance/Acquintance";
 
 const HomePage: FC = () => {
   return (
     <>
       <section className={styles.greeting}>
-        <div className={styles.greeting_wrapper}>
+        <div className={styles.greeting_wrapper} id="greeting">
           <video
             playsInline
             autoPlay
@@ -25,33 +27,7 @@ const HomePage: FC = () => {
         </div>
       </section>
       <Gallery />
-      <div>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-      </div>
+      <Acquintance />
     </>
   );
 };

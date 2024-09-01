@@ -1,0 +1,69 @@
+.card {
+  width: 250px;
+  height: 400px;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+
+.coach_title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  background-color: #701516;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coach_name {
+  font-family: Fira Sans Bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+
+.coach_desc {
+  font-family: Fira Sans;
+  color: #000000;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card{
+        width: 350px;
+        height: 550px;
+    }
+
+    .coach_title{
+        height: 80px;
+    }
+
+    .coach_name{
+        font-size: 22px;
+    }
+
+    .coach_desc{
+        font-size: 16px;
+    }
+    
+}

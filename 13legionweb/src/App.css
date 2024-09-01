@@ -1,4 +1,4 @@
-@import "./assets/fonts/Gilroy/style.css";
+@import url('./assets/fonts/fonts.css');
 
 :root {
   /* --320: 320px;
