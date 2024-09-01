@@ -6,7 +6,7 @@ import CoachCard from "./CoachCard";
 const Acquintance = () => {
   return (
     <section className={styles.wrapper}>
-      <div className={styles.content}>
+      <div className={styles.content} id="coaches">
         <Titlesection text="OUR TRAINERS" />
         <div className={styles.cards}>
           {Coaches.map((el, index) => {

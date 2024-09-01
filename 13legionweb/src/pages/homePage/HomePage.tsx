@@ -3,7 +3,6 @@ import Video from "../../assets/video/main.mp4";
 import styles from "./homePage.module.css";
 import Greeting from "./greeting/greeting";
 import Gallery from "./galleryslider/gallery";
-import CoachCard from "./acquaintance/CoachCard";
 import Acquintance from "./acquaintance/Acquintance";
 
 const HomePage: FC = () => {

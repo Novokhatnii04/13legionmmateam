@@ -1,17 +1,31 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import styled from "./navLinks.module.css";
+import { AppContext } from "../../context/Context";
 
 interface INavLinks {
   modifier?: string;
 }
 
 const NavLinks: FC<INavLinks> = ({ modifier = "" }) => {
+  const { changeMenuHandler } = useContext(AppContext);
+
+  const scrollToSection = (sectionId: string): void => {
+    const toSection = document.getElementById(sectionId);
+    if (toSection) {
+      changeMenuHandler();
+      toSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <ul className={`${styled.navLinks_wrapper} ${styled[modifier]}`}>
-      <li>Головна</li>
-      <li>Галерея</li>
-      <li>Контакти</li>
-      <li>Про нас</li>
+    <ul
+      className={`${styled.navLinks_wrapper} ${
+        modifier ? styled[modifier] : ""
+      }`}
+    >
+      <li onClick={() => scrollToSection("greeting")}>Home</li>
+      <li onClick={() => scrollToSection("gallery")}>Gallery</li>
+      <li onClick={() => scrollToSection("coaches")}>Coaches</li>
     </ul>
   );
 };

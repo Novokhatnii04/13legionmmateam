@@ -23,7 +23,7 @@ const Gallery = () => {
   };
 
   return (
-    <>
+    <div id="gallery" style={{ width: "100%", height: "100%" }}>
       <TitleSection text="WE ARE FIGHT FAMILY" />
       <section className={styles.gallery}>
         <Swiper
@@ -57,7 +57,7 @@ const Gallery = () => {
           ></div>
         </Swiper>
       </section>
-    </>
+    </div>
   );
 };
 
