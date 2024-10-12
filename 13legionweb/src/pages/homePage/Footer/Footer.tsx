@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Footer = () => {
     return (
         <div style={{ backgroundColor: '#701516', width: '100%', height: '400px', marginTop: '190px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

@@ -1,6 +1,5 @@
 import { FC, useState } from "react";
 import styles from "./Card.module.scss";
-import { url } from "inspector";
 
 interface ICard {
   title: string;
