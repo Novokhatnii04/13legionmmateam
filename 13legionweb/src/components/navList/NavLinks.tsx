@@ -26,6 +26,7 @@ const NavLinks: FC<INavLinks> = ({ modifier = "" }) => {
       <li onClick={() => scrollToSection("greeting")}>Home</li>
       <li onClick={() => scrollToSection("gallery")}>Gallery</li>
       <li onClick={() => scrollToSection("coaches")}>Coaches</li>
+      <li onClick={() => scrollToSection("abonements")}>Abonements</li>
     </ul>
   );
 };

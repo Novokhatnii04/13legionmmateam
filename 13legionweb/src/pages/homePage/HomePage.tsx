@@ -4,6 +4,8 @@ import styles from "./homePage.module.css";
 import Greeting from "./greeting/greeting";
 import Gallery from "./galleryslider/gallery";
 import Acquintance from "./acquaintance/Acquintance";
+import Prices from "./prices/Prices";
+import Footer from "./Footer/Footer";
 
 const HomePage: FC = () => {
   return (
@@ -27,6 +29,8 @@ const HomePage: FC = () => {
       </section>
       <Gallery />
       <Acquintance />
+      <Prices />
+      <Footer/>
     </>
   );
 };
